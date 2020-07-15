@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54456D18-43FF-4ED1-813C-ECACB10C4D18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PixelRPG</RootNamespace>
+    <AssemblyName>PixelRPG</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="BattleToolbox.cs" />
+    <Compile Include="CurrentTile.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Items\GoldArmor.cs" />
+    <Compile Include="Items\GoldSandals.cs" />
+    <Compile Include="Items\GoldShield.cs" />
+    <Compile Include="Items\GoldSword.cs" />
+    <Compile Include="Items\IronArmor.cs" />
+    <Compile Include="Items\IronSandals.cs" />
+    <Compile Include="Items\IronShield.cs" />
+    <Compile Include="Items\IronSword.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\LeatherArmor.cs" />
+    <Compile Include="Items\LeatherSandals.cs" />
+    <Compile Include="Items\PotLid.cs" />
+    <Compile Include="Items\Stick.cs" />
+    <Compile Include="Items\WoodenSword.cs" />
+    <Compile Include="LineupToolbox.cs" />
+    <Compile Include="Loot.cs" />
+    <Compile Include="Moves\Airstrike.cs" />
+    <Compile Include="Moves\Bladestorm.cs" />
+    <Compile Include="Moves\Clamp.cs" />
+    <Compile Include="Moves\Conflagration.cs" />
+    <Compile Include="Moves\Cut.cs" />
+    <Compile Include="Moves\CuttingRoots.cs" />
+    <Compile Include="Moves\Deluge.cs" />
+    <Compile Include="Moves\Divebomb.cs" />
+    <Compile Include="Moves\Drizzle.cs" />
+    <Compile Include="Moves\Droplet.cs" />
+    <Compile Include="Moves\Earthquake.cs" />
+    <Compile Include="Moves\Enrage.cs" />
+    <Compile Include="Moves\Flame.cs" />
+    <Compile Include="Moves\FuryRush.cs" />
+    <Compile Include="Moves\Gust.cs" />
+    <Compile Include="Moves\Harden.cs" />
+    <Compile Include="Moves\Headbutt.cs" />
+    <Compile Include="Moves\HealingGrowth.cs" />
+    <Compile Include="Moves\Intimidate.cs" />
+    <Compile Include="Moves\Lava.cs" />
+    <Compile Include="Moves\Lightning.cs" />
+    <Compile Include="Moves\Magma.cs" />
+    <Compile Include="Moves\Mudball.cs" />
+    <Compile Include="Moves\Peck.cs" />
+    <Compile Include="Moves\Photosynthesize.cs" />
+    <Compile Include="Moves\PoisonSting.cs" />
+    <Compile Include="Moves\Pounce.cs" />
+    <Compile Include="Moves\Puff.cs" />
+    <Compile Include="Moves\Punch.cs" />
+    <Compile Include="Moves\Scratch.cs" />
+    <Compile Include="Moves\Slash.cs" />
+    <Compile Include="Moves\Spark.cs" />
+    <Compile Include="Moves\Spear.cs" />
+    <Compile Include="Moves\Sting.cs" />
+    <Compile Include="Moves\Storm.cs" />
+    <Compile Include="Moves\Stream.cs" />
+    <Compile Include="Moves\Tail.cs" />
+    <Compile Include="Moves\Tornado.cs" />
+    <Compile Include="Moves\Torrent.cs" />
+    <Compile Include="Moves\VineLash.cs" />
+    <Compile Include="Moves\WindCutter.cs" />
+    <Compile Include="Pixels\Air\AirBaby.cs" />
+    <Compile Include="Pixels\Air\AirDragon.cs" />
+    <Compile Include="Pixels\Air\AirDragonling.cs" />
+    <Compile Include="Pixels\Air\Drobaby.cs" />
+    <Compile Include="Pixels\Air\Drone.cs" />
+    <Compile Include="Pixels\Air\GreenBaby.cs" />
+    <Compile Include="Pixels\Air\GreenBoy.cs" />
+    <Compile Include="Pixels\Air\Nimbaby.cs" />
+    <Compile Include="Pixels\Air\Nimbus.cs" />
+    <Compile Include="Pixels\Air\Wisbaby.cs" />
+    <Compile Include="Pixels\Air\Wisp.cs" />
+    <Compile Include="Pixels\Dark\Jerome.cs" />
+    <Compile Include="Pixels\Dark\Seanusy.cs" />
+    <Compile Include="Pixels\Dark\Tuccc.cs" />
+    <Compile Include="Pixels\Dark\Tytus.cs" />
+    <Compile Include="Pixels\Dark\TheMaker.cs" />
+    <Compile Include="Pixels\Earth\Arbaby.cs" />
+    <Compile Include="Pixels\Earth\Arbol.cs" />
+    <Compile Include="Pixels\Earth\BladeBlossom.cs" />
+    <Compile Include="Pixels\Earth\BlossBaby.cs" />
+    <Compile Include="Pixels\Earth\ChipBaby.cs" />
+    <Compile Include="Pixels\Earth\Chippy.cs" />
+    <Compile Include="Pixels\Earth\Chombaby.cs" />
+    <Compile Include="Pixels\Earth\Chomp.cs" />
+    <Compile Include="Pixels\Earth\EarthDragon.cs" />
+    <Compile Include="Pixels\Earth\EarthDragonling.cs" />
+    <Compile Include="Pixels\Fire\Erupbaby.cs" />
+    <Compile Include="Pixels\Fire\Eruption.cs" />
+    <Compile Include="Pixels\Fire\FireBaby.cs" />
+    <Compile Include="Pixels\Fire\FireDragon.cs" />
+    <Compile Include="Pixels\Fire\FireDragonling.cs" />
+    <Compile Include="Pixels\Fire\FlameFox.cs" />
+    <Compile Include="Pixels\Fire\Flamander.cs" />
+    <Compile Include="Pixels\Fire\FoxBaby.cs" />
+    <Compile Include="Pixels\Fire\Igbaby.cs" />
+    <Compile Include="Pixels\Fire\Ignis.cs" />
+    <Compile Include="Pixels\Fire\Salababy.cs" />
+    <Compile Include="Pixels\Water\ClampCrab.cs" />
+    <Compile Include="Pixels\Water\Crababy.cs" />
+    <Compile Include="Pixels\Water\Manta.cs" />
+    <Compile Include="Pixels\Water\Mantbaby.cs" />
+    <Compile Include="Pixels\Water\Narbaby.cs" />
+    <Compile Include="Pixels\Water\Narwhally.cs" />
+    <Compile Include="Pixels\Water\Spoubaby.cs" />
+    <Compile Include="Pixels\Water\Spout.cs" />
+    <Compile Include="Pixels\Water\WaterBaby.cs" />
+    <Compile Include="Pixels\Water\WaterDragon.cs" />
+    <Compile Include="Pixels\Water\WaterDragonling.cs" />
+    <Compile Include="Quests\CaptureQuest.cs" />
+    <Compile Include="Quests\IQuest.cs" />
+    <Compile Include="Quests\KillQuest.cs" />
+    <Compile Include="Quests\TravelQuest.cs" />
+    <Compile Include="Regions.cs" />
+    <Compile Include="Moves\Bite.cs" />
+    <Compile Include="Moves\IMove.cs" />
+    <Compile Include="Pixels\Earth\EarthBaby.cs" />
+    <Compile Include="Pixels\IPixel.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPoint.cs" />
+    <Compile Include="Toolbox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

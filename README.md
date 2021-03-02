@@ -2,10 +2,14 @@
 
 A small, handcrafted game featuring monster evolutions and battles.
 
+![Monster battles](./battle.png)
+
 ## Features
 
 - monster battles across a hand-drawn, pixel-art land
 - evolution of monsters to unlock powerful moves
+
+![Hand-drawn pixel art maps](./exploration.png)
 
 ## Available on Steam
 
